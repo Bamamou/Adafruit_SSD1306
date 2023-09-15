@@ -7,7 +7,10 @@ This is the header of all the constants used in this project
 #define GLOBALCONST_H
 
 #include <Arduino.h>
-
+#define SCREEN_I2C_ADDR 0x3C // or 0x3C
+#define SCREEN_WIDTH 128     // OLED display width, in pixels
+#define SCREEN_HEIGHT 64     // OLED display height, in pixels
+#define OLED_RST_PIN -1      // Reset pin (-1 if not available)
 #define FRAME_WIDTH (64)
 #define FRAME_HEIGHT (64)
 #define FRAME_COUNT (sizeof(frames) / sizeof(frames[0]))

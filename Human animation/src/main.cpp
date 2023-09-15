@@ -1,10 +1,5 @@
 
 #include "main.h"
-#define SCREEN_I2C_ADDR 0x3C // or 0x3C
-#define SCREEN_WIDTH 128     // OLED display width, in pixels
-#define SCREEN_HEIGHT 64     // OLED display height, in pixels
-#define OLED_RST_PIN -1      // Reset pin (-1 if not available)
-
 Adafruit_SSD1306 display(128, 64, &Wire, OLED_RST_PIN);
 
 // OLED Animation: walk
